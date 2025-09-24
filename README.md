@@ -57,7 +57,7 @@ SELECT
 FROM walmart_sales;
 ```
 3. Divide data into 4 quarters and calculate total sales for each quarter. Which quarter has the highest growth rate compared to the previous quarter?
-```sqlsql
+```sql
 WITH Quarter_Sales AS (
     SELECT 
         YEAR(STR_TO_DATE(Date, '%d-%m-%Y')) AS Year,
