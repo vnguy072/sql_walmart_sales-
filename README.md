@@ -1,5 +1,6 @@
 # Walmart sales data analysis using SQL
-![Alt text](<img width="320" height="320" alt="walmart-supercentre-logo-png_seeklogo-505325" src="https://github.com/user-attachments/assets/56f41c3c-e18b-4405-844f-84175ccc908b" />)
+<img width="320" height="320" alt="walmart-supercentre-logo-png_seeklogo-505325" src="https://github.com/user-attachments/assets/c975f770-58d7-4ad0-9a78-7b65f02a68e1" />
+
 
 📊 Walmart Sales Analysis
 📌 Overview:
