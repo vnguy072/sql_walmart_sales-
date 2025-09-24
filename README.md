@@ -34,7 +34,7 @@ CREATE TABLE walmart_sales
 ```
 
 🔎 Business Problems and Solutions
-1.Calculate total sales (Weekly_Sales) by each month in 2010. 
+1. Calculate total sales (Weekly_Sales) by each month in 2010. 
 ```sql
 SELECT 
     DATE_FORMAT(STR_TO_DATE(Date, '%d-%m-%Y'), '%m') AS Month,
@@ -44,7 +44,7 @@ WHERE DATE_FORMAT(STR_TO_DATE(Date, '%d-%m-%Y'), '%Y') = '2010'
 GROUP BY DATE_FORMAT(STR_TO_DATE(Date, '%d-%m-%Y'), '%m')
 ORDER BY Total_Sales DESC;
 ```
-2.Compare average sales between holiday weeks (Holiday_Flag = 1) and regular weeks (Holiday_Flag = 0). Calculate the percentage difference.
+2. Compare average sales between holiday weeks (Holiday_Flag = 1) and regular weeks (Holiday_Flag = 0). Calculate the percentage difference.
 ```sqlsql
 SELECT 
     AVG(CASE WHEN Holiday_Flag = 1 THEN Weekly_Sales END) AS Holiday_Avg,
@@ -94,7 +94,7 @@ GROUP BY STR_TO_DATE(Date, '%d-%m-%Y')
 ORDER BY total_sales DESC 
 LIMIT 5; 
 ```
-5.Categorize temperature into ranges (Cold: <50°F, Moderate: 50-70°F, Hot: >70°F) and calculate average sales for each temperature range
+5. Categorize temperature into ranges (Cold: <50°F, Moderate: 50-70°F, Hot: >70°F) and calculate average sales for each temperature range
 ```sqlsql
 SELECT 
     CASE 
@@ -107,7 +107,7 @@ FROM walmart_sales
 GROUP BY Temp_Range
 ORDER BY Avg_Sales DESC;
 ```
-6.Calculate 4-week moving average of sales for each store. Compare with actual sales to identify weeks with unusual fluctuations
+6. Calculate 4-week moving average of sales for each store. Compare with actual sales to identify weeks with unusual fluctuations
 ```sql
 WITH store_weekly AS (
 SELECT 
@@ -133,7 +133,7 @@ SELECT
 FROM store_weekly
 ORDER BY store, total_sales;
 ```
-7.Analyze sales by week within each month (week 1, 2, 3, 4 of each month). Which week of the month typically has the highest sales?
+7. Analyze sales by week within each month (week 1, 2, 3, 4 of each month). Which week of the month typically has the highest sales?
 ```sql
 WITH sales_with_week AS (
     SELECT 
@@ -154,7 +154,7 @@ FROM sales_with_week
 GROUP BY yr, mn, week_of_month
 ORDER BY yr, mn, week_of_month;
 ```
-8.Calculate correlation coefficient between Fuel_Price and Weekly_Sales by month. Which month has the strongest correlation (positive or negative)?
+8. Calculate correlation coefficient between Fuel_Price and Weekly_Sales by month. Which month has the strongest correlation (positive or negative)?
 ```sql
 SELECT 
     MONTH(STR_TO_DATE(Date, '%d-%m-%Y')) AS Month,
@@ -164,7 +164,7 @@ FROM walmart_sales
 GROUP BY MONTH(STR_TO_DATE(Date, '%d-%m-%Y'))
 ORDER BY ABS(Correlation) DESC;
 ```
-9.If dataset spans multiple years, calculate year-over-year sales growth for the same month. Which week shows the most consistent growth?
+9. If dataset spans multiple years, calculate year-over-year sales growth for the same month. Which week shows the most consistent growth?
 ```sql
 WITH t1 AS (
     SELECT 
@@ -195,7 +195,7 @@ FROM yoy_growth
 GROUP BY Month
 ORDER BY Growth_Variability ASC;
 ```
-10.Create a comprehensive seasonal analysis report showing:
+10. Create a comprehensive seasonal analysis report showing:
 - Identify seasonal peaks and troughs throughout the year
 - Calculate seasonality index for each month (month sales / annual average sales)
 ```sql
