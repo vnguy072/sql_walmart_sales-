@@ -1,8 +1,8 @@
 # Walmart sales data analysis using SQL
 <img width="320" height="320" alt="walmart-supercentre-logo-png_seeklogo-505325" src="https://github.com/user-attachments/assets/c975f770-58d7-4ad0-9a78-7b65f02a68e1" />
 
-
 📊 Walmart Sales Analysis
+
 📌 Overview:
 This project involves a comprehensive analysis of Walmart’s weekly sales data using SQL. The goal is to uncover key business insights related to seasonality, growth trends, and correlations with external factors (fuel prices). This README outlines the objectives, dataset schema, business problems, SQL solutions, findings, and conclusions.
 
