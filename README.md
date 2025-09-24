@@ -198,7 +198,7 @@ ORDER BY Growth_Variability ASC;
 10.Create a comprehensive seasonal analysis report showing:
 - Identify seasonal peaks and troughs throughout the year
 - Calculate seasonality index for each month (month sales / annual average sales)
-```sqlsql
+```sql
 WITH monthly_sales AS (
 SELECT 
 	MONTH(STR_TO_DATE(Date, '%d-%m-%Y')) AS Month,
