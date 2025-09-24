@@ -45,7 +45,7 @@ GROUP BY DATE_FORMAT(STR_TO_DATE(Date, '%d-%m-%Y'), '%m')
 ORDER BY Total_Sales DESC;
 ```
 2. Compare average sales between holiday weeks (Holiday_Flag = 1) and regular weeks (Holiday_Flag = 0). Calculate the percentage difference.
-```sqlsql
+```sql
 SELECT 
     AVG(CASE WHEN Holiday_Flag = 1 THEN Weekly_Sales END) AS Holiday_Avg,
     AVG(CASE WHEN Holiday_Flag = 0 THEN Weekly_Sales END) AS Regular_Avg,
