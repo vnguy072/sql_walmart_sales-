@@ -95,7 +95,7 @@ ORDER BY total_sales DESC
 LIMIT 5; 
 ```
 5. Categorize temperature into ranges (Cold: <50°F, Moderate: 50-70°F, Hot: >70°F) and calculate average sales for each temperature range
-```sqlsql
+```sql
 SELECT 
     CASE 
         WHEN Temperature < 50 THEN 'Cold'
