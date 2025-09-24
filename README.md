@@ -251,6 +251,7 @@ FROM seasonality
   + Seasonality Index quantifies sales uplift compared to the annual average.
 
 ✍️ Author
+
 Van Huu Hien Nguyen – Business Analytics Student
 This project is part of my SQL portfolio, showcasing skills in data cleaning, analysis, and business insights generation.
 Feel free to reach out for feedback or collaboration!
