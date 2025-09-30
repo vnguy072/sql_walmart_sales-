@@ -15,6 +15,7 @@ This project involves a comprehensive analysis of Walmart’s weekly sales data 
   + Calculate the Seasonality Index (monthly sales ÷ annual average sales).
 
 📂 Dataset
+
 The dataset comes from Walmart Sales Data.
 
 ## Schema
